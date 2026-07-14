@@ -59,7 +59,7 @@ h2{
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)
     ),
-    url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1600&q=80');
+    url('immaginecane.png');
 
     background-size:cover;
     background-position:center;
@@ -80,15 +80,27 @@ h2{
     font-size:1.4rem;
 }
 
-.btn{
+.hero-btn{
     display:inline-block;
-    margin-top:25px;
-    padding:14px 28px;
-    background:white;
-    color:black;
+    padding:14px 30px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,0.3);
+
+    color:white;
+
     text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
+
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:rgba(255,255,255,0.3);
 }
 
 .story{
@@ -244,13 +256,20 @@ footer{
 
     <div>
 
-        <h1>Gianluca & Federica</h1>
+        <h1>Gianluca &amp; Federica</h1>
 
-        <p>12 Giugno 2027</p>
+		<p>3 Giugno 2027</p>
 
-        #rsvp
-            Conferma Presenza
-        </a>
+		<div style="margin-top:30px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+
+		<a href="#rsvp" class = "hero-btn">Conferma Presenza</a>
+        
+		<a href="#programma" class = "hero-btn">Programma</a>
+		
+		<a href="#mappa" class = "hero-btn">Dove Trovarci</a>
+        
+
+</div>
 
     </div>
 
@@ -353,7 +372,7 @@ footer{
 
 </section>
 
-<section>
+<section id="mappa">
 
     <div class="container">
 
@@ -368,7 +387,7 @@ footer{
 
 </section>
 
-<section class="schedule">
+<section id="programma" class="schedule">
 
     <div class="container">
 
@@ -427,11 +446,11 @@ footer{
 </section>
 
 <section id="rsvp" class="rsvp">
-
     <div class="container">
 
+		
         <h2>Conferma Presenza</h2>
-
+		
         <form
           action="https://formspree.io/f/mbdvvjnw"
           method="POST"
@@ -492,7 +511,8 @@ footer{
 
         </form>
 
-    </div>
+   </div>
+
 
 </section>
 
