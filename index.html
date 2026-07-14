@@ -217,6 +217,23 @@ footer{
 
 }
 
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Rapporto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 </style>
 
 </head>
@@ -341,11 +358,13 @@ footer{
     <div class="container">
 
         <h2>Dove Trovarci</h2>
+		<div class="map-container">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.2446260078455!2d14.196941310793864!3d40.558274846894435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b795ad4dfec11%3A0x1ca30d6f1fee387!2sCasa%20Orrico%20-%20Blue%20Grotto!5e0!3m2!1sit!2sit!4v1783960987103!5m2!1sit!2sit" allowfullscreen="" loading="lazy"></iframe>
+</div>
 
-		<div class="mappa-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.2446260078455!2d14.196941310793864!3d40.558274846894435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b795ad4dfec11%3A0x1ca30d6f1fee387!2sCasa%20Orrico%20-%20Blue%20Grotto!5e0!3m2!1sit!2sit!4v1783960987103!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-		</div>
     </div>
+	
+	
 
 </section>
 
