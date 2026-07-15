@@ -1,556 +1,146 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Gianluca & Federica - Il Nostro Matrimonio</title>
-
-<style>
-
-:root{
-    --gold:#c9a66b;
-    --cream:#faf8f4;
-    --text:#333;
-    --dark:#222;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family: Georgia, serif;
-    color:var(--text);
-    line-height:1.6;
-}
-
-section{
-    padding:80px 20px;
-}
-
-.container{
-    max-width:1000px;
-    margin:auto;
-}
-
-h1,h2,h3{
-    margin-bottom:20px;
-}
-
-h2{
-    text-align:center;
-    color:var(--gold);
-    margin-bottom:40px;
-}
-
-.hero{
-    height:100vh;
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.4),
-        rgba(0,0,0,0.4)
-    ),
-    url('simone.jpeg');
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-    color:white;
-}
-
-.hero h1{
-    font-size:4rem;
-}
-
-.hero p{
-    font-size:1.4rem;
-}
-
-.hero-btn{
-    display:inline-block;
-    padding:14px 30px;
-
-    background:rgba(255,255,255,0.15);
-
-    backdrop-filter:blur(8px);
-
-    border:1px solid rgba(255,255,255,0.3);
-
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:50px;
-
-    transition:.3s;
-}
-
-.hero-btn:hover{
-    background:rgba(255,255,255,0.3);
-}
-
-.story{
-    background:var(--cream);
-}
-
-.timeline{
-    max-width:700px;
-    margin:auto;
-}
-
-.timeline-item{
-    padding-left:20px;
-    border-left:3px solid var(--gold);
-    margin-bottom:30px;
-}
-
-.card{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 0 20px rgba(0,0,0,0.08);
-}
-
-.countdown{
-    text-align:center;
-    font-size:2rem;
-    color:var(--gold);
-    font-weight:bold;
-}
-
-.schedule ul{
-    list-style:none;
-}
-
-.schedule li{
-    padding:10px 0;
-    border-bottom:1px solid #eee;
-}
-
-iframe{
-    width:100%;
-    height:400px;
-    border:none;
-    border-radius:12px;
-}
-
-.rsvp{
-    background:var(--cream);
-}
-
-form{
-    max-width:700px;
-    margin:auto;
-}
-
-label{
-    display:block;
-    margin-bottom:6px;
-    margin-top:18px;
-    font-weight:bold;
-}
-
-input,
-select,
-textarea{
-
-    width:100%;
-    padding:12px;
-
-    border:1px solid #ddd;
-    border-radius:8px;
-
-    font-size:1rem;
-}
-
-textarea{
-    min-height:120px;
-}
-
-button{
-
-    margin-top:20px;
-
-    width:100%;
-
-    padding:15px;
-
-    background:var(--gold);
-
-    color:white;
-
-    border:none;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    font-size:1rem;
-}
-
-button:hover{
-    opacity:0.9;
-}
-
-footer{
-
-    background:var(--dark);
-
-    color:white;
-
-    text-align:center;
-
-    padding:30px;
-}
-
-@media(max-width:768px){
-
-    .hero h1{
-        font-size:2.5rem;
-    }
-
-    .hero p{
-        font-size:1rem;
-    }
-
-}
-
-.map-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Rapporto 16:9 */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gianluca & Federica | Capri Wedding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="paper-texture"></div>
 
-<section class="hero">
+  <header class="hero" id="home">
+    <nav class="nav">
+      <!--<a href="#home" class="brand">G & F</a>--!>
+      <div class="nav-links">
+        <a href="#viaggio">Il viaggio</a>
+        <a href="#capri">Location</a>
+        <a href="#programma">Programma</a>
+        <a href="#rsvp">Conferma presenza</a>
+      </div>
+    </nav>
 
-    <div>
+    <img class="hero-art" src="assets/01_hero_casa_watercolor.png" alt="Illustrazione ad acquerello del faro" />
+    <div class="hero-overlay"></div>
 
-        <h1>Gianluca &amp; Federica</h1>
-
-		<p>3 Giugno 2027</p>
-
-		<div style="margin-top:30px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
-
-		<a href="#rsvp" class = "hero-btn">Conferma Presenza</a>
-        
-		<a href="#programma" class = "hero-btn">Programma</a>
-		
-		<a href="#mappa" class = "hero-btn">Dove Trovarci</a>
-        
-
-</div>
-
+    <div class="hero-card">
+      <span class="eyebrow">SIAMO FELICI DI ANNUNCIARE IL NOSTRO MATRIMONIO</span>
+      <h1>Gianluca <em>&</em> Federica</h1>
+      <span class="eyebrow2" style="color: #efc85a;">Capri</span>
+      <div class="hero-date">3 Giugno 2027</div>
+      <a class="button" href="#rsvp">Conferma la presenza</a>
     </div>
 
-</section>
+    <div class="scroll-note">Scorri il viaggio</div>
+  </header>
 
-<section>
+  <main>
+    <section class="intro section" id="viaggio">
+      <div class="intro-copy">
+        <span class="section-kicker">Descrizione</span>
+        <!--<h2>Descrizione </h2>--!>
+        <p>
+          Provaprovaprova
+        </p>
+      </div>
+      <div class="postcard stack-one">
+        <img src="assets/01_hero_ioefede.jpg" alt="Io e Fede" />
+      </div>
+    </section>
 
-    <div class="container">
+    <section class="journey section" id="capri">
+      <div class="section-heading centered">
+        <span class="section-kicker" style="color: #1f5c8b;">Come raggiungere Anacapri</span>
+        <!--<h2>Dall'arrivo sull'isola al tramonto sui Faraglioni</h2>--!>
+      </div>
 
-        <h2>Countdown</h2>
+      <div class="journey-grid">
+        <article class="journey-card large">
+          <img src="assets/04_capri_map_watercolor.png" alt="Mappa artistica di Capri ad acquerello" />
+          <div class="caption">
+            <span>01</span>
+            <h3>La mappa del weekend</h3>
+            <p>Un percorso visivo tra porto, piazzetta, giardini panoramici e terrazze sul mare.</p>
+          </div>
+        </article>
 
-        <div id="countdown" class="countdown">
-            Caricamento...
-        </div>
+        <article class="journey-card">
+          <img src="assets/03_piazzetta_capri_watercolor.png" alt="Piazzetta di Capri illustrata ad acquerello" />
+          <div class="caption">
+            <span>02</span>
+            <h3>La Piazzetta</h3>
+            <p>Un punto d'incontro informale per iniziare il weekend con calma e stile.</p>
+          </div>
+        </article>
 
-    </div>
+        <article class="journey-card pattern-card">
+          <div class="pattern-swatch"></div>
+          <div class="caption">
+            <span>03</span>
+            <h3>Dettagli capresi</h3>
+            <p>Maioliche, limoni e blu mediterranei diventano il linguaggio grafico del sito.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-</section>
+    <section class="program section" id="programma">
+      <div class="program-art">
+        <img src="assets/05_wedding_timeline_watercolor.png" alt="Timeline illustrata del matrimonio a Capri" />
+      </div>
 
-<section class="story">
-
-    <div class="container">
-
-        <h2>La Nostra Storia</h2>
-
+      <div class="program-copy">
+        <span class="section-kicker">Programma della giornata</span>
+        <!--<h2>Programma della giornata</h2> --!>
         <div class="timeline">
-
-            <div class="timeline-item">
-                <h3>Il primo incontro</h3>
-                <p>
-                    Raccontate qui come vi siete conosciuti.
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>Le prime avventure</h3>
-                <p>
-                    Inserite una breve descrizione.
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>La proposta</h3>
-                <p>
-                    Raccontate il momento speciale.
-                </p>
-            </div>
-
+          <div class="time-item"><strong>16:00</strong><span>Welcome drink in terrazza</span></div>
+          <div class="time-item"><strong>17:30</strong><span>Cerimonia panoramica</span></div>
+          <div class="time-item"><strong>19:00</strong><span>Aperitivo al tramonto</span></div>
+          <div class="time-item"><strong>21:00</strong><span>Cena e festa sotto le stelle</span></div>
         </div>
-
-    </div>
-
-</section>
-
-<section>
-
-    <div class="container">
-
-        <h2>Cerimonia</h2>
-
-        <div class="card">
-
-            <h3>Chiesa / Comune</h3>
-
-            <p>
-                12 Giugno 2027 - Ore 16:00
-            </p>
-
-            <p>
-                Inserisci indirizzo
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section>
-
-    <div class="container">
-
-        <h2>Ricevimento</h2>
-
-        <div class="card">
-
-            <h3>Location Ricevimento</h3>
-
-            <p>
-                Ore 13:00
-            </p>
-
-            <p>
-                Inserisci indirizzo
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="mappa">
-
-    <div class="container">
-
-        <h2>Dove Trovarci</h2>
-		<div class="map-container">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.2446260078455!2d14.196941310793864!3d40.558274846894435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b795ad4dfec11%3A0x1ca30d6f1fee387!2sCasa%20Orrico%20-%20Blue%20Grotto!5e0!3m2!1sit!2sit!4v1783960987103!5m2!1sit!2sit" allowfullscreen="" loading="lazy"></iframe>
-</div>
-
-    </div>
-	
-	
-
-</section>
-
-<section id="programma" class="schedule">
-
-    <div class="container">
-
-        <h2>Programma</h2>
-
-        <div class="card">
-
-            <ul>
-
-                <li>16:00 - Cerimonia</li>
-
-                <li>13:00 - Aperitivo</li>
-
-                <li>14:00 - Pranzo</li>
-
-                <li>18:00 - Taglio torta</li>
-
-                <li>22:00 - Festa</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section>
-
-    <div class="container">
-
-        <h2>Lista Nozze</h2>
-
-        <div class="card">
-
-            <p>
-                La vostra presenza sarà il regalo più bello.
-            </p>
-
-            <br>
-
-            <p>
-                Per chi desiderasse contribuire al nostro viaggio:
-            </p>
-
-            <br>
-
-            <strong>
-                IT00X0000000000000000000000
-            </strong>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="rsvp" class="rsvp">
-    <div class="container">
-
-		
-        <h2>Conferma Presenza</h2>
-		
-        <form
-          action="https://formspree.io/f/mbdvvjnw"
-          method="POST"
-            >
-
-            <input
-                type="hidden"
-                name="_subject"
-                value="Nuova Conferma Matrimonio">
-
-            <label>Nome e Cognome</label>
-
-            <input
-                type="text"
-                name="nome"
-                required>
-
-            <label>Parteciperai?</label>
-
-            <select
-                name="presenza"
-                required>
-
-                <option value="">Seleziona</option>
-
-                <option value="SI">
-                    Sì
-                </option>
-
-                <option value="NO">
-                    No
-                </option>
-
-            </select>
-
-            <label>Numero Adulti</label>
-
-            <input
-                type="number"
-                name="adulti"
-                value="1"
-                min="0">
-
-            <label>Numero Bambini</label>
-
-            <input
-                type="number"
-                name="bambini"
-                value="0"
-                min="0">
-            <label>Allergie / Intolleranze</label>
-            <textarea
-                name="allergie"></textarea>
-            <label>Note</label>
-            <textarea
-                name="note"></textarea>
-            <button type="submit">Invia Conferma</button>
-
+      </div>
+    </section>
+
+    <section class="info-strip">
+      <div>
+        <span>Come arrivare</span>
+        <p>Traghetti, aliscafi e transfer consigliati.</p>
+      </div>
+      <div>
+        <span>Dove dormire</span>
+        <p>Hotel e strutture selezionate sull'isola.</p>
+      </div>
+      <div>
+        <span>Cosa portare</span>
+        <p>Dress code leggero, elegante, mediterraneo.</p>
+      </div>
+    </section>
+
+    <section class="rsvp-section section" id="rsvp">
+      <div class="rsvp-panel">
+        <span class="section-kicker">RSVP</span>
+        <h2>Ci sarai?</h2>
+        <p>Una sezione pensata per raccogliere conferme, preferenze alimentari e note degli ospiti.</p>
+        <form>
+          <input type="text" placeholder="Nome e cognome" />
+          <input type="email" placeholder="Email" />
+          <select>
+            <option>Confermo la mia presenza</option>
+            <option>Non potrò partecipare</option>
+          </select>
+          <textarea placeholder="Note o preferenze alimentari"></textarea>
+          <button type="button">Invia conferma</button>
         </form>
+      </div>
+    </section>
+  </main>
 
-   </div>
-
-
-</section>
-
-<footer>
-
-    Gianluca & Federica ♥ 2027
-
-</footer>
-
-<script>
-
-const weddingDate =
-new Date("June 3, 2027 16:00:00").getTime();
-
-function updateCountdown(){
-
-    const now = new Date().getTime();
-
-    const distance = weddingDate - now;
-
-    const days =
-    Math.floor(
-        distance /
-        (1000*60*60*24)
-    );
-
-    document
-        .getElementById("countdown")
-        .innerHTML =
-        days + " giorni al matrimonio";
-
-}
-
-updateCountdown();
-
-setInterval(updateCountdown,1000);
-
-</script>
-
+  <footer>
+    <!-- <div class="footer-mark">G & F</div>--!>
+    <p>Capri · 3 Giugno 2027</p>
+  </footer>
 </body>
 </html>
