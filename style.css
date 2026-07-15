@@ -81,7 +81,7 @@ img{display:block;max-width:100%}
 .hero-card:before{top:18px;left:18px;border-width:1px 0 0 1px}
 .hero-card:after{right:18px;bottom:18px;border-width:0 1px 1px 0}
 .eyebrow,.section-kicker{
-  display:inline-block;text-transform:uppercase;letter-spacing:.28em;font-size:1rem;font-weight:500;color:var(--lemon);
+  display:inline-block;text-transform:uppercase;letter-spacing:.28em;font-size:0.9rem;font-weight:500;color:var(--lemon);
   margin-bottom:18px;margin-top:18px;
 }
 .eyebrow2,.section-kicker{
