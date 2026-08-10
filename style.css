@@ -64,7 +64,7 @@ img{display:block;max-width:100%}
 }
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,39,67,.18),rgba(6,39,67,.74) 88%)}
 .hero:after{
-  content:"";position:absolute;left:-5%;right:-5%;bottom:-60px;height:170px;
+  content:"";position:absolute;left:-5%;right:-5%;bottom:-5px;height:170px;
   background:var(--paper);
   border-radius:50% 50% 0 0 / 70% 70% 0 0;
 }
@@ -74,6 +74,7 @@ img{display:block;max-width:100%}
 
     text-align:center;
     color:white;
+	bottom:50px;
 
     width:min(900px,90vw);
 
@@ -109,7 +110,7 @@ img{display:block;max-width:100%}
 /*.hero-card:before,.hero-card:after{
   content:"";position:absolute;width:76px;height:76px;border-color:rgba(255,255,255,.5);border-style:solid;
 }*/
-.hero-card:before{top:18px;left:18px;border-width:1px 0 0 1px}
+.hero-card:before{top:100px;left:18px;border-width:1px 0 0 1px}
 .hero-card:after{right:18px;bottom:18px;border-width:0 1px 1px 0}
 .eyebrow,.section-kicker{
   display:inline-block;text-transform:uppercase;letter-spacing:.28em;font-size:0.7rem;font-weight:500;color:var(--lemon);
@@ -130,7 +131,7 @@ img{display:block;max-width:100%}
 
 .button,form button{
   display:inline-flex;align-items:center;justify-content:center;
-  border:none;border-radius:999px;padding:16px 34px;
+  border:none;border-radius:999px;padding:16px 34px;transform: translateY(18rem);
   background:linear-gradient(135deg,var(--lemon),#f6df8d);
   color:var(--blue-night);font-weight:600;letter-spacing:.04em;box-shadow:0 12px 30px rgba(239,200,90,.3);cursor:pointer
 }
@@ -174,7 +175,7 @@ img{display:block;max-width:100%}
 .journey-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:stretch}
 .journey-card{background:white;border-radius:34px;overflow:hidden;box-shadow:var(--shadow);position:relative;min-height:430px}
 .journey-card.large{grid-row:span 2}.journey-card img{width:100%;height:100%;object-fit:cover}.caption{position:absolute;left:24px;right:24px;bottom:24px;padding:28px;border-radius:24px;background:rgba(255,255,255,.86);backdrop-filter:blur(12px)}
-.caption span{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--blue-capri);color:white;font-size:.8rem;margin-bottom:14px}.caption h3{font-family:'Cormorant Garamond',serif;font-size:2.1rem;color:var(--blue-night);margin-bottom:8px}.pattern-card{background:var(--paper);padding:24px}.pattern-swatch{height:100%;border-radius:24px;background:url('assets/06_maiolica_pattern_watercolor.png') center/cover}.program{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0))}.program-art{padding:18px;background:white;box-shadow:var(--shadow);border-radius:34px;transform:rotate(1.3deg)}.program-art img{border-radius:24px}.timeline{margin-top:34px;border-left:1px solid rgba(31,92,139,.25);padding-left:28px}.time-item{position:relative;padding:20px 0 20px 24px}.time-item:before{content:"";position:absolute;left:-34px;top:26px;width:13px;height:13px;border-radius:50%;background:var(--lemon);box-shadow:0 0 0 7px rgba(239,200,90,.16)}.time-item strong{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--blue-capri)}.time-item span{color:var(--muted)}.info-strip{margin:40px 7% 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(31,92,139,.18);box-shadow:var(--shadow)}.info-strip div{background:#fff;padding:38px}.info-strip span{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--blue-night);margin-bottom:8px}.info-strip p{color:var(--muted);line-height:1.8}.rsvp-section{padding-top:110px}.rsvp-panel{max-width:900px;margin:auto;text-align:center;padding:70px;border-radius:42px;background:linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.88)),url('assets/06_maiolica_pattern_watercolor.png') center/cover;box-shadow:var(--shadow)}form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}input,select,textarea{width:100%;border:1px solid rgba(31,92,139,.16);background:rgba(255,255,255,.9);border-radius:18px;padding:17px 18px;font:inherit;color:var(--ink)}textarea{grid-column:1/-1;min-height:110px;resize:vertical}form button{grid-column:1/-1;justify-self:center;margin-top:10px}footer{text-align:center;padding:90px 7%;background:var(--blue-night);color:white;margin-top:90px}.footer-mark{margin:0 auto 18px;width:88px;height:88px;border:1px solid rgba(255,255,255,.5);border-radius:50%;display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:2rem;color:#f7df96}footer p{letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;color:rgba(255,255,255,.72)}
+.caption span{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--blue-capri);color:white;font-size:.8rem;margin-bottom:14px}.caption h3{font-family:'Cormorant Garamond',serif;font-size:2.1rem;color:var(--blue-night);margin-bottom:8px}.pattern-card{background:var(--paper);padding:24px}.pattern-swatch{height:100%;border-radius:24px;background:url('assets/06_maiolica_pattern_watercolor.png') center/cover}.program{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0))}.program-art{padding:18px;background:white;box-shadow:var(--shadow);border-radius:34px;transform:rotate(1.3deg)}.program-art img{border-radius:24px}.timeline{margin-top:34px;border-left:1px solid rgba(31,92,139,.25);padding-left:28px}.time-item{position:relative;padding:20px 0 20px 24px}.time-item:before{content:"";position:absolute;left:-34px;top:26px;width:13px;height:13px;border-radius:50%;background:var(--lemon);box-shadow:0 0 0 7px rgba(239,200,90,.16)}.time-item strong{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--blue-capri)}.time-item span{color:var(--muted)}.info-strip{margin:40px 7% 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(31,92,139,.18);box-shadow:var(--shadow)}.info-strip div{background:#fff;padding:38px}.info-strip span{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--blue-night);margin-bottom:8px}.info-strip p{color:var(--muted);line-height:1.8}.rsvp-section{padding-top:110px}.rsvp-panel{max-width:900px;margin:auto;text-align:center;padding:70px;border-radius:42px;background:linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.88)),url('assets/06_maiolica_pattern_watercolor.png') center/cover;box-shadow:var(--shadow)}form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}input,select,textarea{width:100%;border:1px solid rgba(31,92,139,.16);background:rgba(255,255,255,.9);border-radius:18px;padding:17px 18px;font:inherit;color:var(--ink)}textarea{grid-column:1/-1;min-height:110px;resize:vertical}form button{grid-column:1/-1;justify-self:center;margin-top:100px}footer{text-align:center;padding:90px 7%;background:var(--blue-night);color:white;margin-top:90px}.footer-mark{margin:0 auto 18px;width:88px;height:88px;border:1px solid rgba(255,255,255,.5);border-radius:50%;display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:2rem;color:#f7df96}footer p{letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;color:rgba(255,255,255,.72)}
 @keyframes slowZoom{from{transform:scale(1.03)}to{transform:scale(1.09)}}
 @media(max-width:1000px){.nav-links{display:none}.intro,.journey-grid,.program,.info-strip{grid-template-columns:1fr}.journey-card.large{grid-row:auto}.journey-card{min-height:440px}.hero-card{padding:44px 28px}.section{padding:90px 6%}form{grid-template-columns:1fr}.postcard img{height:390px}}
 @media(max-width:640px){.hero-card{width:92vw}.hero p{font-size:.95rem}.intro-copy h2,.section-heading h2,.program-copy h2,.rsvp-panel h2{font-size:3rem}.rsvp-panel{padding:42px 24px}.info-strip{margin-inline:5%}.journey-card{min-height:380px}.caption{position:static;border-radius:0}.pattern-swatch{height:260px}.program-art{transform:none}}
