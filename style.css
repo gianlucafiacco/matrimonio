@@ -52,7 +52,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-card { position: relative; z-index: 2; width: min(92vw, 900px); padding: 96px 16px 88px; text-align: center; color: white; }
 .couple-name { display: flex; flex-direction: column; align-items: center; gap: .02em; margin: 0 0 22px; font-family: 'Cormorant Garamond', serif; font-weight: 300; line-height: .72; }
 .couple-name span { display: block; font-size: clamp(3.6rem, 18vw, 8rem); }
-.couple-name em { font-size: .42em; line-height: .8; color: #f7df96; }
+.couple-name em{
+    font-style:italic;
+    color:#f7df96;
+    font-size:0.85em;
+    line-height:1;
+    font-weight:300;
+}
 .eyebrow, .section-kicker { display: inline-block; margin-bottom: 18px; text-transform: uppercase; letter-spacing: .22em; font-size: .72rem; font-weight: 500; color: var(--lemon); }
 .hero-location { margin-top: 12px; font-size: .9rem; }
 .hero-date { margin-bottom: 28px; font-family: 'Cormorant Garamond', serif; font-size: clamp(1.45rem, 6vw, 1.9rem); letter-spacing: .06em; text-shadow: 0 8px 24px rgba(0,0,0,.24); }
