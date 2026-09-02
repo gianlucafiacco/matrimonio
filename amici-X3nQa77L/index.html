@@ -1,1 +1,158 @@
-<h1>Area Amici</h1>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gianluca & Federica | Capri Wedding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="paper-texture"></div>
+
+  <header class="hero" id="home">
+    <nav class="nav">
+      <div class="nav-links">
+        <a href="#viaggio">Il viaggio</a>
+        <a href="#capri">Location</a>
+        <a href="#programma">Programma</a>
+        <a href="#rsvp">Conferma presenza</a>
+      </div>
+    </nav>
+
+    <img class="hero-art" src="assets/01_hero_casa_watercolor.png" alt="Illustrazione ad acquerello di una terrazza caprese al tramonto" />
+    <div class="hero-overlay"></div>
+
+    <div class="hero-card">
+      <!--<span class="announcement">SIAMO FELICI DI ANNUNCIARE IL NOSTRO MATRIMONIO</span>--!>
+
+      <h1 class="couple-name" >
+        <span>Gianluca</span>
+        <em>&amp;</em>
+        <span>Federica</span>
+      </h1>
+
+      <div class="location-line"></div>
+      <span class="eyebrow" style="color: #efc85a; font-size:1rem;">Capri</span>
+      <div class="hero-date">3 Giugno 2027</div>
+      <a class="button" href="#rsvp">Conferma la presenza</a>
+    </div>
+
+    <div class="scroll-note">Scorri il viaggio</div>
+  </header>
+
+  <main>
+    <section class="intro section" id="viaggio">
+      <div class="intro-copy">
+        <!--<span class="section-kicker">Descrizione</span>--!>
+        <!--<h2>Descrizione </h2>--!>
+        
+        <p> Ciao a tutti!</p>
+        <p>  Se siete qui è perchè non vediamo l'ora di festeggiare con voi il nostro giorno 
+          nella nostra isola del cuore, 
+          dove amore e casa sono sentimenti così radicati da volerli condividere
+          fino in fondo con voi, che siete le nostre persone speciali
+        <p> Speriamo potrete esserci tutti!</p>
+          Gianlu e Fede
+        </p>
+      </div>
+      <div class="postcard stack-one">
+        <img src="assets/01_hero_ioefede.JPG" alt="Io e Fede" />
+      </div>
+    </section>
+
+    <section class="journey section" id="capri">
+      <div class="section-heading centered">
+        <span class="section-kicker" style="color: #1f5c8b; font-size:1rem;">Come raggiungere Anacapri</span>
+        <!--<h2>Dall'arrivo sull'isola al tramonto sui Faraglioni</h2>--!>
+      </div>
+
+      <div class="journey-grid">
+        <article class="journey-card large">
+          <img src="assets/04_capri_map_watercolor.png" alt="Mappa artistica di Capri ad acquerello" />
+          <div class="intro-copy">
+            <!--<span>01</span>-
+            <h3>La mappa del weekend</h3>
+            <p>Un percorso visivo tra porto, piazzetta, giardini panoramici e terrazze sul mare.</p>-!>
+          </div>
+        </article>
+<!--
+        <article class="journey-card">
+          <img src="assets/03_piazzetta_capri_watercolor.png" alt="Piazzetta di Capri illustrata ad acquerello" />
+          <div class="caption">
+            <span>02</span>
+            <h3>La Piazzetta</h3>
+            <p>Un punto d'incontro informale per iniziare il weekend con calma e stile.</p>
+          </div>
+        </article>
+
+        <article class="journey-card pattern-card">
+          <div class="pattern-swatch"></div>
+          <div class="caption">
+            <span>03</span>
+            <h3>Dettagli capresi</h3>
+            <p>Maioliche, limoni e blu mediterranei diventano il linguaggio grafico del sito.</p>
+          </div>
+        </article>--!>
+      </div>
+    </section>
+
+    <section class="program section" id="programma">
+      <div class="program-art">
+        <img src="assets/05_wedding_timeline_watercolor.png" alt="Timeline illustrata del matrimonio a Capri" />
+      </div>
+
+      <div class="program-copy">
+        <span class="section-kicker">Programma della giornata</span>
+        <!--<h2>Programma della giornata</h2> --!>
+        <div class="timeline">
+          <div class="time-item"><strong>16:00</strong><span>Welcome drink in terrazza</span></div>
+          <div class="time-item"><strong>17:30</strong><span>Cerimonia panoramica</span></div>
+          <div class="time-item"><strong>19:00</strong><span>Aperitivo al tramonto</span></div>
+          <div class="time-item"><strong>21:00</strong><span>Cena e festa sotto le stelle</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-strip">
+      <div>
+        <span>Come arrivare</span>
+        <p>Traghetti, aliscafi e transfer consigliati.</p>
+      </div>
+      <div>
+        <span>Dove dormire</span>
+        <p>Hotel e strutture selezionate sull'isola.</p>
+      </div>
+      <div>
+        <span>Cosa portare</span>
+        <p>Dress code leggero, elegante, mediterraneo.</p>
+      </div>
+    </section>
+
+    <section class="rsvp-section section" id="rsvp">
+      <div class="rsvp-panel">
+        <span class="section-kicker">RSVP</span>
+        <h2>Ci sarai?</h2>
+        <p>Una sezione pensata per raccogliere conferme, preferenze alimentari e note degli ospiti.</p>
+        <form>
+          <input type="text" placeholder="Nome e cognome" />
+          <input type="email" placeholder="Email" />
+          <select>
+            <option>Confermo la mia presenza</option>
+            <option>Non potrò partecipare</option>
+          </select>
+          <textarea placeholder="Note o preferenze alimentari"></textarea>
+          <button type="button">Invia conferma</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- <div class="footer-mark">G & F</div>--!>
+    <p>Capri · 3 Giugno 2027</p>
+  </footer>
+</body>
+</html>
