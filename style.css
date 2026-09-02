@@ -75,7 +75,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .section-kicker-blue { color: var(--blue-capri); font-size: .9rem; }
 
 .journey { position: relative; }
-.journey::before { content: ''; position: absolute; inset: 0 0 auto; height: 280px; background: url('/assets/06_maiolica_pattern_watercolor.png') center/cover; opacity: .16; z-index: -1; }
+.journey::before { content: ''; position: absolute; inset: 0 0 auto; height: 280px; opacity: .16; z-index: -1; }
 .journey-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
 .journey-card { position: relative; min-height: 330px; overflow: hidden; border-radius: 24px; background: white; box-shadow: var(--shadow); }
 .journey-card img { width: 100%; height: 100%; object-fit: cover; }
