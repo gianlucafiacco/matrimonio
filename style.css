@@ -74,10 +74,20 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .centered { max-width: 850px; margin: 0 auto 36px; text-align: center; }
 .section-kicker-blue { color: var(--blue-capri); font-size: .9rem; }
 .section-divider{
-  text-align:center;
-  font-size:2rem;
-  margin:40px 0;
-  letter-spacing:0.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    margin:70px auto;
+    color:#efc85a;
+    font-size:1.4rem;
+}
+.section-divider::before,
+.section-divider::after{
+    content:"";
+    width:80px;
+    height:1px;
+    background:#efc85a;
 }
 
 .journey { position: relative; }
