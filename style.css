@@ -74,14 +74,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .centered { max-width: 850px; margin: 0 auto 36px; text-align: center; }
 .section-kicker-blue { color: var(--blue-capri); font-size: .9rem; }
 .section-divider{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    font-size:2rem;
-    margin:60px auto;
-    letter-spacing:0.5rem;
+  text-align:center;
+  font-size:2rem;
+  margin:40px 0;
+  letter-spacing:0.5rem;
 }
 
 .journey { position: relative; }
