@@ -80,7 +80,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .postcard { position: relative; padding: 12px 12px 54px; background: white; box-shadow: var(--shadow); transform: rotate(-1deg); }
 .postcard img { width: 100%; height: clamp(360px, 115vw, 620px); object-fit: cover; object-position: center; }
 .centered { max-width: 850px; margin: 0 auto 36px; text-align: center; }
-.section-kicker-blue { color: var(--blue-capri); font-size: .9rem; }
+.section-kicker-blue { color: var(--blue-capri); font-size: 1.1rem; }
 .section-divider{
     display:flex;
     align-items:center;
