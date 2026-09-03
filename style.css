@@ -35,12 +35,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .section { width: min(100%, 1500px); margin: auto; padding: 72px 20px; }
 
+
+/*
 .nav {
   position: absolute; inset: 0 0 auto; z-index: 5; padding: 22px 6%;
   display: flex; justify-content: center; color: white;
 }
 .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 24px; font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; }
 .nav-links a { min-height: 44px; display: inline-flex; align-items: center; }
+*/
 
 .hero {
   min-height: 100svh; position: relative; display: grid; place-items: center;
