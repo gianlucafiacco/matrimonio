@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <div class="paper-texture" aria-hidden="true"></div>
+  <!--<div class="paper-texture" aria-hidden="true"></div>
 
   <header class="hero" id="home">
     <nav class="nav" aria-label="Navigazione principale">
@@ -22,8 +22,17 @@
         <a href="#programma">Programma</a>
         <a href="#rsvp">Conferma presenza</a>
       </div>
-    </nav>
-
+    </nav>-->
+<button class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</button>
+  <nav id="sideMenu" class="side-menu">
+    <a href="#viaggio" onclick="toggleMenu()">Il viaggio</a>
+    <a href="#capri" onclick="toggleMenu()">Location</a>
+    <a href="#programma" onclick="toggleMenu()">Programma</a>
+    <a href="#rsvp" onclick="toggleMenu()">Conferma presenza</a>
+</nav>
+  
     <img class="hero-art" src="/assets/01_hero_casa_watercolor.png" alt="Illustrazione ad acquerello di una terrazza caprese al tramonto" />
     <div class="hero-overlay" aria-hidden="true"></div>
 
