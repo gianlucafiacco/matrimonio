@@ -15,7 +15,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: 20px; }
 body {
   min-width: 320px;
-  font-family:'WeddingFont';
+  font-family: 'Montserrat', system-ui, sans-serif;
   background: var(--paper);
   color: var(--ink);
   overflow-x: hidden;
@@ -66,7 +66,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .scroll-note { position: absolute; left: 50%; bottom: 20px; z-index: 3; transform: translateX(-50%); white-space: nowrap; font-size: .58rem; letter-spacing: .2em; text-transform: uppercase; color: white; opacity: .85; }
 
 .intro, .program { display: grid; grid-template-columns: 1fr; gap: 42px; align-items: center; }
-.intro-copy p {font-family: 'WeddingFont', serif;}, .caption p, .program-copy p, .rsvp-panel p { line-height: 1.8; color: var(--muted); font-size: .98rem; }
+.intro-copy p, .caption p, .program-copy p, .rsvp-panel p { line-height: 1.8; color: var(--muted); font-size: .98rem; }
 .intro-copy p + p { margin-top: 14px; }
 .intro-copy h2, .section-heading h2, .program-copy h2, .rsvp-panel h2 { margin-bottom: 22px; font-family: 'Cormorant Garamond', serif; font-size: clamp(2.7rem, 12vw, 5.5rem); font-weight: 300; line-height: 1.02; color: var(--blue-night); }
 .postcard { position: relative; padding: 12px 12px 54px; background: white; box-shadow: var(--shadow); transform: rotate(-1deg); }
@@ -154,11 +154,18 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
   .paper-texture { opacity: .12; }
   .scroll-note { bottom: 14px; }
 }
+
 @font-face {
     font-family: 'WeddingFont';
     src: url('/assets/Allura-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+.welcome-text {
+    font-family: 'WeddingFont', serif;
+    font-size: 1.15rem;
+    line-height: 1.9;
 }
 
 @media (prefers-reduced-motion: reduce) {
