@@ -156,7 +156,7 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
 }
 @font-face {
     font-family: 'WeddingFont';
-    src: url('/assets/fonts/Allura-Regular.otf') format('opentype');
+    src: url('/assets/Allura-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
