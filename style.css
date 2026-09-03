@@ -176,7 +176,7 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
     position: fixed;
     top: 25px;
     right: 25px;
-    z-index: 1001;
+    z-index: 100000;
 
     background: rgba(255,255,255,0.9);
     border: none;
