@@ -167,7 +167,7 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
 
 .welcome-text {
     font-family: 'WeddingFont', serif;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     line-height: 1.8;
     color: var(--blue-night);
 }
