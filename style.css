@@ -15,7 +15,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: 20px; }
 body {
   min-width: 320px;
-  font-family: 'Montserrat', system-ui, sans-serif;
+  font-family:'WeddingFont';
   background: var(--paper);
   color: var(--ink);
   overflow-x: hidden;
