@@ -111,6 +111,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .time-item::before { content: ''; position: absolute; left: -29px; top: 24px; width: 12px; height: 12px; border-radius: 50%; background: var(--lemon); box-shadow: 0 0 0 6px rgba(239,200,90,.16); }
 .time-item strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--blue-capri); }
 .time-item span { color: var(--muted); line-height: 1.5; }
+.time-item h4{
+    margin:18px 0 8px;
+    color: var(--blue-capri);
+    font-size:1rem;
+    font-weight:600;
+}
+.time-item p{
+    margin-bottom:12px;
+    line-height:1.8;
+}
 .central-text strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--blue-capri); }
 .central-text span { color: var(--muted); line-height: 1.5; }
 
