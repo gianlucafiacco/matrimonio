@@ -133,7 +133,7 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
 @keyframes slowZoom { from { transform: scale(1.02); } to { transform: scale(1.08); } }
 
 @media (min-width: 700px) {
-  .section { padding: 92px 6%; }
+  .section { padding: 10px 6%; }
   .hero::after { height: 120px; }
   .hero-card { padding-bottom: 120px; }
   .intro, .program { grid-template-columns: .9fr 1.1fr; gap: 55px; }
