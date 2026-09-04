@@ -53,7 +53,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6,39,67,.25), rgba(6,39,67,.78) 88%); }
 .hero::after { content: ''; position: absolute; left: -10%; right: -10%; bottom: -1px; height: 75px; background: var(--paper); border-radius: 50% 50% 0 0 / 70% 70% 0 0; }
 .hero-card { position: relative; z-index: 2; width: min(92vw, 900px); padding: 96px 16px 88px; text-align: center; color: white; }
-.couple-name { display: flex; flex-direction: column; align-items: center; gap: 0.5em; margin: 0 0 22px; font-family: 'Cormorant Garamond', serif; font-weight: 300; line-height: .72; }
+.couple-name { display: flex; flex-direction: column; align-items: center; gap: 0.5em; margin: 0 0 100px; font-family: 'Cormorant Garamond', serif; font-weight: 300; line-height: .72; }
 .couple-name span { display: block; font-size: clamp(3.6rem, 18vw, 8rem); }
 .couple-name em{
     font-style:italic;
