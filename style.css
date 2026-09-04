@@ -33,7 +33,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
               repeating-linear-gradient(0deg, rgba(6,39,67,.035) 0 1px, transparent 1px 4px);
   mix-blend-mode: multiply;
 }
-.section { width: min(100%, 1500px); margin: auto; padding: 72px 20px; }
+.section { width: min(100%, 1500px); margin: auto; padding: 0px 20px; }
 
 
 /*
