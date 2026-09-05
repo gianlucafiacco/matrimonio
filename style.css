@@ -238,3 +238,231 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+<!-- sezioni trasporti test-->
+
+/* SEZIONE COME RAGGIUNGERE ANACAPRI */
+
+.transport-section {
+    padding: 72px 20px;
+    background: var(--paper);
+}
+
+.transport-section .section-heading {
+    max-width: 760px;
+    margin: 0 auto 38px;
+    padding: 0 70px;
+}
+
+.transport-section .section-kicker {
+    display: inline-block;
+    line-height: 1.35;
+}
+
+.transport-content {
+    width: min(100%, 760px);
+    margin: 0 auto;
+}
+
+.transport-intro {
+    max-width: 650px;
+    margin: 0 auto 36px;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.transport-options {
+    display: grid;
+    gap: 18px;
+}
+
+.transport-card {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+
+    padding: 24px;
+    border: 1px solid rgba(15, 91, 135, 0.12);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 8px 30px rgba(6, 39, 67, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.transport-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(15, 91, 135, 0.25);
+    box-shadow: 0 14px 36px rgba(6, 39, 67, 0.1);
+}
+
+.transport-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    background: rgba(239, 200, 90, 0.22);
+
+    font-size: 1.35rem;
+}
+
+.transport-card-content h3 {
+    margin: 0 0 4px;
+    color: var(--blue-night);
+    font-size: 1.08rem;
+    line-height: 1.35;
+}
+
+.transport-label {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    color: var(--blue-capri);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.transport-card-content p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+
+.transport-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.transport-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-height: 48px;
+    padding: 12px 24px;
+
+    border: 1px solid var(--blue-capri);
+    border-radius: 999px;
+
+    background: var(--blue-capri);
+    color: white;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.transport-button:hover {
+    background: transparent;
+    color: var(--blue-capri);
+    transform: translateY(-2px);
+}
+
+.transport-button:focus-visible {
+    outline: 3px solid rgba(239, 200, 90, 0.65);
+    outline-offset: 4px;
+}
+
+.transport-tip {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 16px;
+
+    margin-top: 34px;
+    padding: 22px;
+
+    border-left: 4px solid var(--lemon);
+    border-radius: 0 16px 16px 0;
+
+    background: rgba(239, 200, 90, 0.13);
+}
+
+.tip-icon {
+    font-size: 1.35rem;
+}
+
+.transport-tip h3 {
+    margin: 0 0 8px;
+    color: var(--blue-night);
+    font-size: 1rem;
+}
+
+.transport-tip p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* VERSIONE MOBILE */
+
+@media (max-width: 699px) {
+
+    .transport-section {
+        padding: 60px 20px;
+    }
+
+    .transport-section .section-heading {
+        margin-bottom: 32px;
+        padding: 0 58px 0 20px;
+    }
+
+    .transport-section .section-kicker {
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+
+    .transport-intro {
+        margin-bottom: 28px;
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .transport-card {
+        grid-template-columns: 40px 1fr;
+        gap: 14px;
+        padding: 20px 18px;
+        border-radius: 16px;
+    }
+
+    .transport-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.15rem;
+    }
+
+    .transport-card-content p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .transport-button {
+        width: 100%;
+    }
+
+    .transport-tip {
+        grid-template-columns: 32px 1fr;
+        padding: 20px 16px;
+    }
+}
