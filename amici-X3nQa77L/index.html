@@ -346,26 +346,148 @@
     ✦
 </div>
     
-    <section class="rsvp-section section" id="rsvp">
-      <div class="rsvp-panel">
+<section class="rsvp-section section" id="rsvp">
+
+    <div class="rsvp-panel">
+
         <span class="section-kicker">RSVP</span>
+
         <h2>Ci sarai?</h2>
-        <form>
-          <label class="sr-only" for="nome">Nome e cognome</label>
-          <input id="nome" name="nome" type="text" placeholder="Nome e cognome" autocomplete="name" required />
-          <label class="sr-only" for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required />
-          <label class="sr-only" for="presenza">Presenza</label>
-          <select id="presenza" name="presenza">
-            <option>Confermo la mia presenza</option>
-            <option>Non potrò partecipare</option>
-          </select>
-          <label class="sr-only" for="note">Note o preferenze alimentari</label>
-          <textarea id="note" name="note" placeholder="Note o preferenze alimentari"></textarea>
-          <button type="button">Invia conferma</button>
+
+        <p class="rsvp-intro">
+            Conferma la tua presenza e indicaci il numero di partecipanti
+            ed eventuali esigenze alimentari.
+        </p>
+
+        <form
+            id="rsvpForm"
+            class="rsvp-form"
+            action="https://formspree.io/f/mbdvvjnw"
+            method="POST">
+
+            <!-- NOME E COGNOME -->
+
+            <div class="form-group form-group-full">
+                <label for="nome">
+                    Nome e Cognome
+                </label>
+                <input
+                    id="nome"
+                    name="Nome"
+                    type="text"
+                    placeholder="Nome e Cognome"
+                    autocomplete="name"
+                    required>
+            </div>
+
+            <!-- PRESENZA -->
+
+            <div class="form-group form-group-full">
+                <label for="presenza">
+                    Presenza
+                </label>
+                <select
+                    id="presenza"
+                    name="Presenza"
+                    required>
+                    <option value="" selected disabled>
+                        Seleziona una risposta
+                    </option>
+                    <option value="Confermo la mia presenza">
+                        Confermo la mia presenza
+                    </option>
+                   <option value="Non potrò partecipare">
+                        Non potrò partecipare
+                    </option>
+                </select>
+            </div>
+
+            <!-- NUMERO ADULTI -->
+            <div class="form-group">
+                <label for="adulti">
+                    Numero di adulti
+                </label>
+                <input
+                    id="adulti"
+                    name="# Adulti"
+                    type="number"
+                    min="0"
+                    max="20"
+                    step="1"
+                    value="1"
+                    inputmode="numeric"
+                    required>
+            </div>
+          
+            <!-- NUMERO BAMBINI -->
+            <div class="form-group">
+                <label for="bambini">
+                    Numero di bambini
+                </label>
+                <input
+                    id="bambini"
+                    name="# Bambini"
+                    type="number"
+                    min="0"
+                    max="20"
+                    step="1"
+                    value="0"
+                    inputmode="numeric"
+                    required>
+            </div>
+          
+            <!-- INTOLLERANZE -->
+            <div class="form-group form-group-full">
+                <label for="intolleranze">
+                    Intolleranze o esigenze alimentari
+                </label>
+                <textarea
+                    id="intolleranze"
+                    name="Intolleranze"
+                    rows="4"
+                    placeholder="Indica eventuali allergie, intolleranze o esigenze alimentari"></textarea>
+            </div>
+          
+            <!-- NOTE -->
+            <div class="form-group form-group-full">
+                <label for="note">
+                    Note
+                </label>
+                <textarea
+                    id="note"
+                    name="Note"
+                    rows="4"
+                    placeholder="Aggiungi eventuali altre informazioni"></textarea>
+            </div>
+          
+            <!-- DATA DI INVIO AUTOMATICA -->
+            <input
+                id="dataInvio"
+                name="Data Invio"
+                type="hidden">
+          
+            <!-- CAMPO ANTISPAM -->
+            <input
+                class="form-honeypot"
+                name="_gotcha"
+                type="text"
+                tabindex="-1"
+                autocomplete="off">
+          
+            <!-- PULSANTE -->
+            <div class="form-submit form-group-full">
+                <button class="rsvp-button" type="submit">
+                    Invia conferma
+                </button>
+            </div>
         </form>
-      </div>
-    </section>
+        <p class="privacy-note">
+            I dati inseriti saranno utilizzati esclusivamente
+            per organizzare la giornata.
+        </p>
+    </div>
+</section>
+    
   </main>
 
   <footer><p>Capri · 3 Giugno 2027</p></footer>
@@ -378,6 +500,24 @@ function toggleMenu() {
         .toggle("open");
 }
 </script>
+
+  <script>
+      const rsvpForm = document.getElementById("rsvpForm");
+      const dataInvioField = document.getElementById("dataInvio");
   
+      rsvpForm.addEventListener("submit", function () {
+          const dataCorrente = new Date();
+  
+          dataInvioField.value = dataCorrente.toLocaleString("it-IT", {
+              timeZone: "Europe/Rome",
+              year: "numeric",
+              month: "2-digit",
+              day: "2-digit",
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit"
+          });
+      });
+  </script>
 </body>
 </html>
