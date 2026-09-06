@@ -130,7 +130,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .info-strip p { color: var(--muted); line-height: 1.7; }
 
 .rsvp-section { padding-top: 72px; }
-.rsvp-panel { max-width: 900px; margin: auto; padding: 42px 20px; border-radius: 28px; text-align: center; background: linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)), url('/assets/06_maiolica_pattern_watercolor.png') center/cover; box-shadow: var(--shadow); }
+.rsvp-panel{
+    max-width:900px;
+    margin:auto;
+    padding:42px 32px;
+    border-radius:24px;
+    text-align: center;
+    background:#f7fbff;
+    border:1px solid rgba(208,160,40,.18);
+    box-shadow: var(--shadow);}
 form { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 28px; }
 input, select, textarea { width: 100%; min-height: 50px; border: 1px solid rgba(31,92,139,.2); border-radius: 14px; padding: 14px 16px; background: rgba(255,255,255,.94); color: var(--ink); font-size: 16px; }
 textarea { min-height: 120px; resize: vertical; }
