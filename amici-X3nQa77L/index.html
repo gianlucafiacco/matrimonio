@@ -346,143 +346,113 @@
     ✦
 </div>
     
-<section class="rsvp-section section" id="rsvp">
+<form
+    id="rsvpForm"
+    class="rsvp-form"
+    action="https://formspree.io/f/mbdvvjnw"
+    method="POST">
 
-    <div class="rsvp-panel">
-        <span class="section-kicker">RSVP</span>
-        <h2>Ci sarai?</h2>
-        <p class="rsvp-intro">
-            Conferma la tua presenza
-        </p>
+    <!-- NOME E COGNOME -->
 
-        <form
-            id="rsvpForm"
-            class="rsvp-form"
-            action="https://formspree.io/f/mbdvvjnw"
-            method="POST">
-
-            <!-- NOME E COGNOME -->
-
-            <div class="form-group form-group-full">
-                <label for="nome">
-                    Nome e Cognome
-                </label>
-                <input
-                    id="nome"
-                    name="Nome"
-                    type="text"
-                    placeholder="Nome e Cognome"
-                    autocomplete="name"
-                    required>
-            </div>
-
-            <!-- PRESENZA -->
-
-            <div class="form-group form-group-full">
-                <label for="presenza">
-                    Presenza
-                </label>
-                <select
-                    id="presenza"
-                    name="Presenza"
-                    required>
-                    <option value="" selected disabled>
-                        Seleziona una risposta
-                    </option>
-                    <option value="Confermo la mia presenza">
-                        Confermo la mia presenza
-                    </option>
-                   <option value="Non potrò partecipare">
-                        Non potrò partecipare
-                    </option>
-                </select>
-            </div>
-
-            <!-- NUMERO ADULTI -->
-            <div class="form-group">
-                <label for="adulti">
-                    Numero di adulti
-                </label>
-                <input
-                    id="adulti"
-                    name="# Adulti"
-                    type="number"
-                    min="0"
-                    max="20"
-                    step="1"
-                    value="1"
-                    inputmode="numeric"
-                    required>
-            </div>
-          
-            <!-- NUMERO BAMBINI -->
-            <div class="form-group">
-                <label for="bambini">
-                    Numero di bambini
-                </label>
-                <input
-                    id="bambini"
-                    name="# Bambini"
-                    type="number"
-                    min="0"
-                    max="20"
-                    step="1"
-                    value="0"
-                    inputmode="numeric"
-                    required>
-            </div>
-          
-            <!-- INTOLLERANZE -->
-            <div class="form-group form-group-full">
-                <label for="intolleranze">
-                    Intolleranze o esigenze alimentari
-                </label>
-                <textarea
-                    id="intolleranze"
-                    name="Intolleranze"
-                    rows="4"
-                    placeholder="Indica eventuali allergie, intolleranze o esigenze alimentari"></textarea>
-            </div>
-          
-            <!-- NOTE -->
-            <div class="form-group form-group-full">
-                <label for="note">
-                    Note
-                </label>
-                <textarea
-                    id="note"
-                    name="Note"
-                    rows="4"
-                    placeholder="Aggiungi eventuali altre informazioni"></textarea>
-            </div>
-          
-            <!-- DATA DI INVIO AUTOMATICA -->
-            <input
-                id="dataInvio"
-                name="Data invio"
-                type="hidden">
-          
-            <!-- CAMPO ANTISPAM -->
-            <input
-                class="form-honeypot"
-                name="_gotcha"
-                type="text"
-                tabindex="-1"
-                autocomplete="off">
-          
-            <!-- PULSANTE -->
-            <div class="form-submit form-group-full">
-                <button class="rsvp-button" type="submit">
-                    Invia conferma
-                </button>
-            </div>
-        </form>
-        <p class="privacy-note">
-            I dati inseriti saranno utilizzati esclusivamente
-            per organizzare la giornata.
-        </p>
+    <div class="form-group form-group-full">
+        <input
+            id="nome"
+            name="Nome"
+            type="text"
+            placeholder="Nome e Cognome"
+            autocomplete="name"
+            required>
     </div>
-</section>
+
+    <!-- PRESENZA -->
+
+    <div class="form-group form-group-full">
+        <select
+            id="presenza"
+            name="Presenza"
+            required>
+
+            <option value="" selected disabled>
+                Presenza
+            </option>
+
+            <option value="Confermo la mia presenza">
+                Confermo la mia presenza
+            </option>
+
+            <option value="Non potrò partecipare">
+                Non potrò partecipare
+            </option>
+
+        </select>
+    </div>
+
+    <!-- ADULTI -->
+
+    <div class="form-group">
+        <input
+            id="adulti"
+            name="# Adulti"
+            type="number"
+            min="0"
+            max="20"
+            step="1"
+            value="1"
+            placeholder="Numero Adulti"
+            required>
+    </div>
+
+    <!-- BAMBINI -->
+
+    <div class="form-group">
+        <input
+            id="bambini"
+            name="# Bambini"
+            type="number"
+            min="0"
+            max="20"
+            step="1"
+            value="0"
+            placeholder="Numero Bambini"
+            required>
+    </div>
+
+
+    <!-- NOTE -->
+
+    <div class="form-group form-group-full">
+        <textarea
+            id="note"
+            name="Note"
+            rows="2"
+            placeholder="Intolleranze o altre note"></textarea>
+    </div>
+
+    <!-- DATA INVIO -->
+
+    <input
+        id="dataInvio"
+        name="Data invio"
+        type="hidden">
+
+    <!-- ANTISPAM -->
+
+    <input
+        class="form-honeypot"
+        name="_gotcha"
+        type="text"
+        tabindex="-1"
+        autocomplete="off">
+
+    <!-- PULSANTE -->
+
+    <div class="form-submit form-group-full">
+        <button class="rsvp-button" type="submit">
+            Invia conferma
+        </button>
+    </div>
+
+</form>
     
   </main>
 
