@@ -526,4 +526,80 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
 
 }
 
+/* ==========================
+   GIFT
+========================== */
+
+.gift-page{
+    min-height:100vh;
+    padding:40px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f7fbff;
+}
+
+.gift-panel{
+    max-width:760px;
+    background:white;
+    padding:40px;
+    border-radius:24px;
+    text-align:center;
+    border:1px solid rgba(15,91,135,.08);
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.06);
+}
+
+.gift-image{
+    width:100%;
+    max-width:450px;
+    border-radius:18px;
+    display:block;
+    margin:0 auto 24px;
+}
+
+.gift-panel h1{
+    margin:15px 0;
+    color:var(--blue-capri);
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+}
+
+.gift-description{
+    max-width:600px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.iban-box{
+    margin:35px 0;
+    padding:24px;
+    background:#fcfaf6;
+    border:1px solid rgba(208,160,40,.2);
+    border-radius:16px;
+}
+
+.iban-box span{
+    display:block;
+    color:var(--muted);
+    margin-bottom:10px;
+}
+
+.iban-box strong{
+    font-size:1.2rem;
+    letter-spacing:.05em;
+    color:var(--blue-night);
+}
+
+.gift-note{
+    margin-top:20px;
+    color:var(--muted);
+}
+
+.back-link{
+    position:fixed;
+    top:25px;
+    left:25px;
+    text-decoration:none;
+    color:var(--blue-capri);
 }
