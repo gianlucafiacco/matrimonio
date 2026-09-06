@@ -509,17 +509,21 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
     .transport-card-content h3,
     .info-card h3{
         font-size:1.6rem;
+        text-align:center
     }
 
     .transport-card-content p,
     .info-card p,
     .transport-intro{
         font-size:.95rem;
+        text-align:center
     }
 
     .transport-tip{
         flex-direction:column;
         text-align:center;
     }
+
+}
 
 }
