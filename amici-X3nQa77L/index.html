@@ -349,14 +349,10 @@
 <section class="rsvp-section section" id="rsvp">
 
     <div class="rsvp-panel">
-
         <span class="section-kicker">RSVP</span>
-
         <h2>Ci sarai?</h2>
-
         <p class="rsvp-intro">
-            Conferma la tua presenza e indicaci il numero di partecipanti
-            ed eventuali esigenze alimentari.
+            Conferma la tua presenza
         </p>
 
         <form
@@ -463,7 +459,7 @@
             <!-- DATA DI INVIO AUTOMATICA -->
             <input
                 id="dataInvio"
-                name="Data Invio"
+                name="Data invio"
                 type="hidden">
           
             <!-- CAMPO ANTISPAM -->
@@ -491,15 +487,17 @@
   </main>
 
   <footer><p>Capri · 3 Giugno 2027</p></footer>
-<script>
+
+  <!-- funzioni javascript-->
   
-function toggleMenu() {
-    document
-        .getElementById("sideMenu")
-        .classList
-        .toggle("open");
-}
-</script>
+  <script>
+  function toggleMenu() {
+      document
+          .getElementById("sideMenu")
+          .classList
+          .toggle("open");
+  }
+  </script>
 
   <script>
       const rsvpForm = document.getElementById("rsvpForm");
