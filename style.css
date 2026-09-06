@@ -463,6 +463,9 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
 .transport-content-simple{
     max-width:900px;
     margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
 }
 
 .transport-intro{
