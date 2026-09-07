@@ -387,9 +387,9 @@ footer p { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; 
 
 .transport-tip h3{
     margin:0 0 8px;
-
+    font-size:1.4rem;
+    margin-bottom:2rem;
     color:var(--blue-capri);
-
     font-family:'Cormorant Garamond', serif;
 }
 
