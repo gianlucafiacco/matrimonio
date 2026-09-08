@@ -2,220 +2,515 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gianluca & Federica | Matrimonio 3 Giugno 2027</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#062743" />
+  <meta name="description" content="Gianluca e Federica si sposano a Capri il 3 giugno 2027. Tutte le informazioni sul matrimonio." />
+  <title>Gianluca &amp; Federica | Matrimonio 3 Giugno 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <div class="paper-texture"></div>
-
-  <header class="hero" id="home">
-    <nav class="nav">
+<div class="paper-texture" aria-hidden="true"></div>
+<button class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</button>
+    <!--<nav class="nav" aria-label="Navigazione principale">
       <div class="nav-links">
         <a href="#viaggio">Il viaggio</a>
         <a href="#capri">Location</a>
         <a href="#programma">Programma</a>
         <a href="#rsvp">Conferma presenza</a>
       </div>
-    </nav>
+    </nav>-->
+
+  <nav id="sideMenu" class="side-menu">
+    <!--<a href="#viaggio" onclick="toggleMenu()">Il viaggio</a>-->
+    <a href="#capri" onclick="toggleMenu()">Info utili</a>
+    <a href="#programma" onclick="toggleMenu()">Programma</a>
+    <a href="#rsvp" onclick="toggleMenu()">Conferma presenza</a>
+</nav>
+<header class="hero" id="home">
 
     <img class="hero-art" src="/assets/01_hero_casa_watercolor.png" alt="Illustrazione ad acquerello di una terrazza caprese al tramonto" />
-    <div class="hero-overlay"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
 
     <div class="hero-card">
-      <h1 class="couple-name" >
+      <h1 class="couple-name">
         <span>Gianluca</span>
         <em>&amp;</em>
         <span>Federica</span>
       </h1>
-
-      <div class="location-line"></div>
-      <span class="eyebrow" style="color: #efc85a; font-size:1rem;">Capri</span>
+      <span class="eyebrow hero-location">Capri</span>
       <div class="hero-date">3 Giugno 2027</div>
       <a class="button" href="#rsvp">Conferma la presenza</a>
     </div>
-
-    <div class="scroll-note">Scorri il viaggio</div>
   </header>
 
   <main>
     <section class="intro section" id="viaggio">
       <div class="intro-copy">
-        
-        <p> Ciao a tutti!</p>
-        <p>  Se siete qui è perchè non vediamo l'ora di festeggiare con voi il nostro giorno 
-          nella nostra isola del cuore, 
-          dove amore e casa sono sentimenti così radicati da volerli condividere
-          fino in fondo con voi, che siete le nostre persone speciali
-        <p> Speriamo possiate esserci tutti!</p>
-          Gianlu e Fede
-        </p>
-      </div>
+        <p class="welcome-text">
+          Se siete qui è perché non vediamo l'ora di festeggiare con voi il nostro
+          giorno nella nostra isola del cuore, dove amore e casa sono sentimenti così 
+          radicati da volerli condividere fino in fondo con voi, che siete le nostre persone speciali.</p>
+        <p class="welcome-text">Speriamo possiate esserci!</p>
+        <p class="welcome-text">Gianlu e Fede</p>
+  </div>
       <div class="postcard stack-one">
-        <img src="/assets/01_hero_ioefede.JPG" alt="Io e Fede" />
+        <img src="/assets/01_hero_ioefede.JPG" alt="Gianluca e Federica" loading="lazy" />
       </div>
-    </section>
-     
-<section class="transport-section section" id="capri">
+</section>
+    
+<div class="section-divider">
+    ✦
+</div>
+
+
+<section class="journey section" id="capri">
     <div class="section-heading centered">
-        <span class="section-kicker section-kicker-blue">
-            Come raggiungere<br>Anacapri
+        <span class="section-kicker">
+            Info utili
+        </span>
+        <span class="section-kicker section-kicker-blue transport-title">
+            Come raggiungere Capri da Napoli
         </span>
     </div>
+    <div class="transport-content-simple">
+        <p class="transport-intro">
+            Per raggiungere Capri da Napoli sono disponibili collegamenti
+            giornalieri in aliscafo e traghetto.
+        </p>
+        <div class="info-card">
+            <h3>Aliscafo</h3>
+            <p>
+                <strong>Molo Beverello</strong><br>
+                Partono gli aliscafi veloci diretti a Capri in circa 45-50 minuti.
+            </p>
+        </div>
+        <div class="info-card">
+            <h3>Traghetto</h3>
+            <p>
+                <strong>Calata Porta di Massa</strong><br>
+                Partono i traghetti tradizionali diretti a Capri in circa 1 ora e 20 minuti.
+            </p>
+        </div>
+        <div class="info-card">
+            <h3>Parcheggi</h3>
+            <p>
+                Nelle immediate vicinanze dei moli di partenza
+                sono disponibili diversi garage custoditi a pagamento.
+            </p>
+        </div>
+        <div class="transport-actions">
+            <a
+                class="transport-button"
+                href="https://www.capri.it/it/ferry-schedule"
+                target="_blank"
+                rel="noopener noreferrer">
+                Consulta gli orari dei traghetti
+                <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+    </div>
+</section>    
+
+    
+<!--
+<section class="journey section" id="capri">
+  <div class="section-heading centered">
+    <span class="section-kicker" style="line-height: 1.6;">Info utili</span><br>
+    <span class="section-kicker section-kicker-blue" style="margin-top:3rem;">
+     Come raggiungere Capri da Napoli
+     </span>
+  </div>
+
+    <div class="central-text">
+      <span>
+      Per raggiungere Capri da Napoli, i porti di partenza sono: <br>
+       • <b>Molo Beverello:</b> partono gli aliscafi veloci. Il viaggio dura circa 45-50 minuti. <br>
+       • <b>Calata Porta di Massa:</b> partono i traghetti tradizionali. Il viaggio dura circa 1 ora e 20 minuti. <br><br>
+      <b>Se arrivi in auto:</b> troverai diversi garage custoditi a pagamento direttamente nei pressi dei moli di partenza
+          <br><br>
+<div class="transport-actions">
+            <a
+                class="transport-button"
+                href="https://www.capri.it/it/ferry-schedule"
+                target="_blank"
+                rel="noopener noreferrer">
+                Orari traghetti Napoli - Capri
+                <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+      </div>   
+
+<div class="section-heading centered">
+<span class="section-kicker section-kicker-blue" style="margin-top:5rem;">
+            Come raggiungere Anacapri
+        </span>
+    </div>
+
+    <div class="central-text">
+      <span>
+            Una volta sbarcati al porto di Marina Grande, avete tre opzioni principali per raggiungere Anacapri:
+            <br><br>
+            • <b>In Bus (consigliato per tipicità):</b><br>
+            prendete il bus diretto Marina Grande - Anacapri (stazionamento a destra del molo di sbarco).
+            Il tragitto dura circa 25 minuti lungo una strada panoramica mozzafiato.
+            <br><br>
+            • <b>In Taxi (trasporta anche 5/6 persone):</b><br>
+            troverete le tipiche auto cabriolet pronte all'uscita del porto.
+            È l'opzione più comoda se viaggiate con bagagli.
+            Il viaggio dura circa 15-20 minuti.
+            <br><br>
+            • <b>Funicolare + Bus/Taxi (alternativa panoramica):</b><br>
+            prendete la funicolare dal porto fino a Capri centro (5 minuti).
+            Arrivati in Piazzetta, camminate 2 minuti fino allo stazionamento dei bus o dei taxi diretti ad Anacapri.
+            <br><br>
+            <b>Orari dei trasporti:</b>
+            <br><br>
+            <a href="https://www.capri.it/it/orari-autobus?path=12"
+               style="color: #0000FF;"
+               target="_blank"
+               class="transport-link">
+                Orari trasporti Capri - Anacapri
+            </a>
+            <br><br>
+            <b>Il consiglio in più:</b><br>
+            Acquistate i biglietti dei trasporti pubblici (bus e funicolare)
+            direttamente alle biglietterie del porto prima di salire a bordo.
+    </span></div>
+</section>
+-->
+        
+<section class="journey section" id="capri">
+      <div class="section-heading centered">
+            <span class="section-kicker section-kicker-blue" style="margin-top:8rem; color: var(--blue-capri); font-size: 1.1rem; font-weight: 1000;">
+             Come raggiungere Anacapri
+            </span>
+        </div>
+</section>
+        
+<section class="transport-section section" id="capri">
     <div class="transport-content">
         <p class="transport-intro">
             Una volta sbarcati al porto di Marina Grande, avete tre
             opzioni principali per raggiungere Anacapri.
         </p>
-        <div class="transport-options">
-
-            <!-- BUS -->
-
-            <article class="transport-card bus">
-                <div class="transport-icon">
-                    assets/icons/navetta.png
-                </div>
-                <div class="transport-card-content">
-                    <h3>In bus</h3>
-                    <span class="transport-label">
-                        Consigliato per tipicità
-                    </span>
-                    <p>
-                        Prendete il bus diretto Marina Grande - Anacapri.
-                        Lo stazionamento si trova a destra del molo di sbarco.
-                        Il tragitto dura circa 25 minuti lungo una splendida
-                        strada panoramica.
-                    </p>
-                </div>
-            </article>
-
-            <!-- TAXI -->
-
-            <article class="transport-card taxi">
-                <div class="transport-icon">
-                    assets/icons/taxi.png
-                </div>
-                <div class="transport-card-content">
-                    <h3>In taxi</h3>
-                    <span class="transport-label">
-                        Comodo con i bagagli
-                    </span>
-                    <p>
-                        All'uscita del porto troverete le tipiche auto
-                        cabriolet capresi, ideali anche per gruppi di
-                        5 o 6 persone.
-                        Il viaggio dura circa 15-20 minuti.
-                    </p>
-                </div>
-            </article>
-          
-            <!-- FUNICOLARE -->
-          
-            <article class="transport-card funicolare">
-                <div class="transport-icon">
-                    assets/icons/treno.png
-                </div>
-                <div class="transport-card-content">
-                    <h3>Funicolare + bus o taxi</h3>
-                    <span class="transport-label">
-                        Alternativa panoramica
-                    </span>
-                    <p>
-                        Prendete la funicolare dal porto fino alla Piazzetta
-                        di Capri. Da lì potrete raggiungere facilmente
-                        lo stazionamento dei bus o dei taxi diretti ad
-                        Anacapri.
-                    </p>
-                </div>
-            </article>
+      
+  <div class="transport-options">
+    <!-- BUS -->
+    <article class="transport-card bus">
+        <div class="transport-icon">
+             <img src="/assets/icons/navetta.png"/>
         </div>
-        <div class="transport-actions">
+        <div class="transport-card-content">
+            <h3>In bus</h3>
+            <span class="transport-label" style="color:#d0a028;">
+                Consigliato per tipicità
+            </span>
+            <p>
+                Prendete il bus diretto Marina Grande - Anacapri.<br>
+                Lo stazionamento si trova a destra del molo di sbarco.
+                Il tragitto dura circa 25 minuti lungo una splendida
+                strada panoramica.
+            </p>
+        </div>
+    </article>
+
+    <!-- TAXI -->
+    <article class="transport-card taxi">
+        <div class="transport-icon">
+           <img src="/assets/icons/taxi.png"/>
+        </div>
+        <div class="transport-card-content">
+            <h3>In taxi</h3>
+            <span class="transport-label"style="color:#d0a028;">
+                Comodo con i bagagli
+            </span>
+            <p>
+                All'uscita del porto troverete le tipiche auto
+                cabriolet capresi, ideali anche per gruppi di
+                5 o 6 persone.
+                Il viaggio dura circa 15-20 minuti.
+            </p>
+        </div>
+    </article>
+    <!-- FUNICOLARE -->
+    <article class="transport-card funicolare">
+        <div class="transport-icon">
+           <img src="/assets/icons/treno.png"/>
+        </div>
+        <div class="transport-card-content">
+            <h3>Funicolare + bus o taxi</h3>
+            <span class="transport-label"style="color:#d0a028;">
+                Alternativa panoramica
+            </span>
+            <p>
+                Prendete la funicolare dal porto fino alla Piazzetta
+                di Capri. Da lì potrete raggiungere facilmente
+                lo stazionamento dei bus o dei taxi diretti ad
+                Anacapri.
+            </p>
+        </div>
+    </article>
+  </div>
+<div class="transport-actions">
             <a
                 class="transport-button"
                 href="https://www.capri.it/it/orari-autobus?path=12"
                 target="_blank"
                 rel="noopener noreferrer">
-                Consulta gli orari
+                Orari dei trasporti
                 <span aria-hidden="true">↗</span>
             </a>
         </div>
         <aside class="transport-tip">
-            <div class="tip-icon">
+           <!-- <div class="tip-icon">
                 💡
-            </div>
+            </div>-->
             <div>
-
-                <h3>Il consiglio in più</h3>
-
+                <h3>Un consiglio</h3>
                 <p>
                     Acquistate i biglietti di bus e funicolare direttamente
                     alle biglietterie del porto prima di salire a bordo.
                 </p>
             </div>
-        </aside>
-    </div>
-      <div class="journey-grid">
-        <article class="journey-card large">
-          <img src="/assets/04_capri_map_watercolor.png" alt="Mappa artistica di Capri ad acquerello" />
-          <div class="intro-copy">
+        </aside>  
       </div>
 </section>
-
-
-    <section class="program section" id="programma">
-      <div class="program-art">
-        <img src="/assets/05_wedding_timeline_watercolor.png" alt="Timeline illustrata del matrimonio a Capri" />
+  
+<div class="journey-grid" style="margin-top:3rem;>
+        <article class="journey-card large">
+          <img src="/assets/mappa_capri.jpeg" alt="Mappa  di Capri" loading="lazy" />
+        </article>
       </div>
 
-      <div class="program-copy">
-        <span class="section-kicker">Programma della giornata</span>
-        <div class="timeline">
-          <div class="time-item"><strong>16:00</strong><span>Welcome drink in terrazza</span></div>
-          <div class="time-item"><strong>17:30</strong><span>Cerimonia panoramica</span></div>
-          <div class="time-item"><strong>19:00</strong><span>Aperitivo al tramonto</span></div>
-          <div class="time-item"><strong>21:00</strong><span>Cena e festa sotto le stelle</span></div>
-        </div>
+<div class="section-divider">
+    ✦
+</div>
+    
+<section class="program section" id="programma">
+  <div class="program-copy">
+    <span class="section-kicker">
+      Programma della giornata
+    </span>
+    <div class="timeline">
+      <div class="time-item">
+        <strong>15:30</strong>
+        <h4>Cerimonia</h4>
+        <p>
+          Ci scambieremo le promesse nella Chiesa di Santa Sofia,
+          nel cuore del centro storico di Anacapri.
+        </p>
+        <h4>a seguire · Brindisi di auguri</h4>
+        <p>
+          Subito dopo la cerimonia ci tratterremo nei pressi della
+          chiesa per un breve rinfresco di benvenuto.
+        </p>
+        <h4>Trasferimento</h4>
+        <p>
+          Al termine del rinfresco ci sposteremo insieme a piedi
+          verso la zona del Cimitero di Anacapri, dove troverete
+          le navette dedicate per raggiungere la location.
+        </p>
       </div>
-    </section>
+      <div class="time-item">
+        <strong>18:00</strong>
+        <h4>Arrivo in villa</h4>
+        <p>
+          Grotta Azzurra, Anacapri.
+        </p>
+        <p>
+          Qui darà il via la nostra festa ufficiale,
+          tra brindisi, cena e balli fino a tarda notte!
+        </p>
+        <h4>Rientro</h4>
+        <p>
+          Non preoccupatevi per il ritorno: a fine festa ci sarà una navetta ad aspettarvi
+          che vi riporterà comodamente al punto di partenza
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--
+    <section class="info-strip" aria-label="Informazioni utili">
+      <div><span>Come arrivare</span><p>Traghetti, aliscafi e transfer consigliati.</p></div>
+      <div><span>Dove dormire</span><p>Hotel e strutture selezionate sull'isola.</p></div>
+      <div><span>Cosa portare</span><p>Dress code leggero, elegante, mediterraneo.</p></div>
+    </section>-->
+    
+<div class="section-divider">
+    ✦
+</div>
 
-    <section class="info-strip">
-      <div>
-        <span>Come arrivare</span>
-        <p>Traghetti, aliscafi e transfer consigliati.</p>
-      </div>
-      <div>
-        <span>Dove dormire</span>
-        <p>Hotel e strutture selezionate sull'isola.</p>
-      </div>
-      <div>
-        <span>Cosa portare</span>
-        <p>Dress code leggero, elegante, mediterraneo.</p>
-      </div>
-    </section>
 
-    <section class="rsvp-section section" id="rsvp">
-      <div class="rsvp-panel">
-        <span class="section-kicker">RSVP</span>
-        <h2>Ci sarai?</h2>
-        <form>
-          <input type="text" placeholder="Nome e cognome" />
-          <input type="email" placeholder="Email" />
-          <select>
-            <option>Confermo la mia presenza</option>
-            <option>Non potrò partecipare</option>
-          </select>
-          <textarea placeholder="Note o preferenze alimentari"></textarea>
-          <button type="button">Invia conferma</button>
-        </form>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>Capri · 3 Giugno 2027</p>
-  </footer>
+<aside class="transport-tip">
+            <div>
+                <h3>Una nota importante per voi</h3>
+                <p>
+                Capri è un'isola meravigliosa ma la logistica e i trasporti richiedono una complessa organizzazione.
+                Per questo motivo vi chiediamo di farci sapere davvero il prima possibile se non potrete essere dei nostri, così da permetterci 
+                di coordinare tutto al meglio. Grazie di cuore!
+                </p>
+            </div>
+        </aside>  
+
+<section class="rsvp-section section" id="rsvp">
+
+    <div class="rsvp-panel">
+        <span class="section-kicker">Ci sarai?</span>
+        <p class="rsvp-intro">
+            Conferma la tua presenza
+        </p>
+<form
+    id="rsvpForm"
+    class="rsvp-form"
+    action="https://formspree.io/f/mbdvvjnw"
+    method="POST">
+
+    <!-- NOME E COGNOME -->
+
+    <div class="form-group form-group-full">
+        <input
+            id="nome"
+            name="Nome"
+            type="text"
+            placeholder="Nome e Cognome"
+            autocomplete="name"
+            required>
+    </div>
+
+    <!-- PRESENZA -->
+
+    <div class="form-group form-group-full">
+        <select
+            id="presenza"
+            name="Presenza"
+            required>
+
+            <option value="" selected disabled>
+                Presenza
+            </option>
+
+            <option value="Confermo la mia presenza">
+                Confermo la mia presenza
+            </option>
+
+            <option value="Non potrò partecipare">
+                Non potrò partecipare
+            </option>
+
+        </select>
+    </div>
+
+    <!-- ADULTI -->
+
+    <div class="form-group">
+    <input id="adulti"
+           name="# Adulti"
+           type="number"
+           min="0"
+           max="20"
+           step="1"
+           placeholder="Numero Adulti"
+           required>
+    </div>
+
+    <!-- BAMBINI -->
+
+    <div class="form-group">
+    <input id="bambini"
+           name="# Bambini"
+           type="number"
+           min="0"
+           max="20"
+           step="1"
+           placeholder="Numero Bambini"
+           required>
+    </div>
+
+
+    <!-- NOTE -->
+
+    <div class="form-group form-group-full">
+        <textarea
+            id="note"
+            name="Note"
+            rows="2"
+            placeholder="Intolleranze o altre note"></textarea>
+    </div>
+
+    <!-- DATA INVIO -->
+
+    <input
+        id="dataInvio"
+        name="Data invio"
+        type="hidden">
+
+
+    <!-- PULSANTE -->
+
+    <div class="form-submit form-group-full">
+        <button class="rsvp-button" type="submit">
+            Invia conferma
+        </button>
+    </div>
+</form>
+      
+</section>   
+
+<section class="journey section" id="fine">
+    <div class="section-heading centered">
+      <span class="section-kicker section-kicker-blue transport-title" style="margin-top:5rem; color:var(--blue-night);">
+            Il nostro viaggio
+        </span>
+    </div>
+    <div class="transport-content-simple">
+  
+  <a class="button" href="gift.html" style="background: linear-gradient(135deg, var(--sea));box-shadow: 0 0 0;">
+  Apri dettagli
+  <span aria-hidden="true"> ↗</span>
+</a>
+</div>
+</section>
+    
+    
+</main>
+
+  <footer><p>Capri · 3 Giugno 2027</p></footer>
+
+  <!-- funzioni javascript-->
+  
+  <script>
+  function toggleMenu() {
+      document
+          .getElementById("sideMenu")
+          .classList
+          .toggle("open");
+  }
+  </script>
+
+  <script>
+      const rsvpForm = document.getElementById("rsvpForm");
+      const dataInvioField = document.getElementById("dataInvio");
+  
+      rsvpForm.addEventListener("submit", function () {
+          const dataCorrente = new Date();
+  
+          dataInvioField.value = dataCorrente.toLocaleString("it-IT", {
+              timeZone: "Europe/Rome",
+              year: "numeric",
+              month: "2-digit",
+              day: "2-digit",
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit"
+          });
+      });
+  </script>
 </body>
 </html>
